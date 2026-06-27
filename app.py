@@ -8,7 +8,7 @@ st.set_page_config(page_title="UAC Forecast Dashboard", layout="wide")
 st.title("🏥 UAC Program — Predictive Forecasting Dashboard")
 
 # Load data
-df = pd.read_csv('data/uac_cleaned.csv', index_col='Date', parse_dates=True)
+df = pd.read_csv('uac_cleaned.csv', index_col='Date', parse_dates=True)
 
 features = ['lag_1','lag_7','lag_14','rolling_7_mean',
             'rolling_14_mean','net_pressure','day_of_week','month']
